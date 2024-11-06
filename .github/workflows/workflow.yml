@@ -1,0 +1,17 @@
+#nom du pipeline
+name: CI workflow
+#evenement
+on:
+  push:
+    branches:
+      -"main"
+  pull_request:
+    branches:
+      -"main"
+#job
+
+job:
+  build: # nom du job, decrit ce que fait le jon
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
+
