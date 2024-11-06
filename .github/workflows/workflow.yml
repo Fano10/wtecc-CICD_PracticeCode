@@ -10,7 +10,7 @@ on:
       -"main"
 #job
 
-job:
+jobs:
   build: # nom du job, decrit ce que fait le jon
     runs-on: ubuntu-latest
     container: python:3.9-slim
